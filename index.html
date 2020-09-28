@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Assignment 1</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="icon" href="iconryan.ico">
+</head>
+
+<body>
+  <h1 align="center">Online Simple Calculator</h1>
+  <div class="container">
+    <div class="row">
+      <div class="card text-center">
+        <div class="card-body">
+          <form name="hitung">
+            <input class="form-control form-control-lg" type="text" name="hasil" placeholder="0" readonly>
+            <table>
+              <tr>
+                <td><input type="button" class="btn btn-success" value="1" onclick="hitung.hasil.value += '1'"></td>
+                <td><input type="button" class="btn btn-success" value="2" onclick="hitung.hasil.value += '2'"></td>
+                <td><input type="button" class="btn btn-success" value="3" onclick="hitung.hasil.value += '3'"></td>
+                <td><input type="button" class="btn btn-dark" value="*" onclick="hitung.hasil.value += ' * '"></td>
+              </tr>
+              <tr>
+                <td><input type="button" class="btn btn-success" value="4" onclick="hitung.hasil.value += '4'"></td>
+                <td><input type="button" class="btn btn-success" value="5" onclick="hitung.hasil.value += '5'"></td>
+                <td><input type="button" class="btn btn-success" value="6" onclick="hitung.hasil.value += '6'"></td>
+                <td><input type="button" class="btn btn-dark" value="/" onclick="hitung.hasil.value += ' / '"></td>
+              </tr>
+              <tr>
+                <td><input type="button" class="btn btn-success" value="7" onclick="hitung.hasil.value += '7'"></td>
+                <td><input type="button" class="btn btn-success" value="8" onclick="hitung.hasil.value += '8'"></td>
+                <td><input type="button" class="btn btn-success" value="9" onclick="hitung.hasil.value += '9'"></td>
+                <td><input type="button" class="btn btn-dark" value="-" onclick="hitung.hasil.value += ' - '"></td>
+              </tr>
+              <tr>
+                <td><input type="button" class="btn btn-success" value="0" onclick="hitung.hasil.value += '0'"></td>
+                <td><input type="button" class="btn btn-success" value="." onclick="hitung.hasil.value += '.'"></td>
+                <td><input type="button" class="btn btn-danger" value="C" onclick="window.location.reload(true);" name="refresh"></td>
+                <td><input type="button" class="btn btn-dark" value="+" onclick="hitung.hasil.value += ' + '"></td>
+              </tr>
+            </table>
+            <input type="button" class="pull btn-block btn btn-primary waves-effect waves-classic" value="=" onclick="hitung.hasil.value = hitung.hasil.value + ' = ' +eval(hitung.hasil.value)">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-container">
+    <p class="copyright">© 2020 Ryan Alparisi. All right reserved.</p>
+  </div>
+  <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+</body>
+
+</html>

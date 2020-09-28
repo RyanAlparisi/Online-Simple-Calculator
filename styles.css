@@ -1,0 +1,49 @@
+body {
+	text-align: center;
+}
+
+h1 {
+  color: #66BFBF;
+  font-size: 5.625rem;
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+}
+
+.container {
+  margin: 40px auto;
+  padding: 60px 300px 60px 365px;
+}
+
+.card {
+  box-shadow: 0 10px 20px 0 #D1D1D1;
+  border-radius: 12px;
+}
+
+.btn {
+  width: 90px;
+  margin: 3px 3px 3px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn-dark {
+  margin-right: 0;
+}
+
+.form-control {
+  text-align: right;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bottom-container {
+  background-color: #66BFBF;
+  padding: 50px 0 20px;
+}
+
+.copyright {
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
